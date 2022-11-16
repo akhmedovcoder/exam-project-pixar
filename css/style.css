@@ -35,6 +35,8 @@
   --subtitle-color: #636F87;
   --white-color: #FFFFFF;
   --green-color: #1AAB7B;
+  --silver-bg: #F2F4F6;
+  --black: #000000;
 }
 
 body{
@@ -77,6 +79,9 @@ a{
   padding: 24px 0;
   border-bottom: 1px solid #EEEEF4;
   margin-bottom: 92px;
+  position: sticky;
+  top: 0;
+  background: var(--white-color);
 }
 
 .header__wrapper{
@@ -155,6 +160,12 @@ a{
 /*-----HAEDER SECTION END-----*/
 
 
+
+
+
+/*-----HERO SECTION START-----*/
+
+
 .hero__section-wrapper{
   display: flex;
   justify-content: space-between;
@@ -208,3 +219,108 @@ a{
   border: none;
   border-radius: 6px;
 }
+
+/*-----HERO SECTION END-----*/
+
+
+
+
+
+/*-----SERVICE SECTION START-----*/
+
+.sercvice__section{
+  background: var(--silver-bg);
+  padding: 50px 0;
+}
+
+.service__section-title{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 50.4px;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 40px;
+}
+
+.service__section-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__box-card{
+  display: flex;
+  flex-direction: column;
+  width: 384px;
+  padding: 30px;
+  border: 2px solid #E1E7ED;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.service__box-card:nth-child(1){
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.service__box-card:nth-child(2){
+  margin-right: 32px;
+}
+
+.service__box-card:nth-child(4){
+  margin-right: 32px;
+}
+
+.service__box-card:hover{
+  background: var(--green-color);
+}
+
+.service__box-card:hover .service__card-title{
+  color: var(--white-color);
+}
+
+.service__box-card:hover .service__card-subtitle{
+  color: var(--white-color);
+}
+
+.service__box-card:hover .service__card-btn{
+  text-decoration: underline;
+  color: var(--white-color);
+}
+
+.service__card-title{
+  display: flex;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.8px;
+  color: var(--title-color);
+  margin-bottom: 20px;
+}
+
+.service__card-title::after{
+  content: url(/img/card-web-img.svg);
+  width: 64px;
+  height: 64px;
+
+  margin-left: 60px;
+  background-color: #E1E7ED;
+}
+
+.service__card-subtitle{
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--subtitle-color);
+}
+
+.service__card-btn{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--black);
+}
+
+.web .service__card-subtitle{
+  margin-bottom: 50px;
+}
+
+/*-----SERVICE SECTION END-----*/
+
