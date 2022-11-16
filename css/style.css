@@ -34,6 +34,7 @@
   --title-color: #101010;
   --subtitle-color: #636F87;
   --white-color: #FFFFFF;
+  --green-color: #1AAB7B;
 }
 
 body{
@@ -157,6 +158,7 @@ a{
 .hero__section-wrapper{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 156px;
 }
 
 .hero__section-title{
@@ -174,10 +176,32 @@ a{
   font-weight: 400;
   line-height: 27px;
   color: #636F87;
+  margin-bottom: 40px;
 }
 
 .hero__section-btn{
-  color: ;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 6px;
+  color: var(--white-color);
+  background: var(--green-color);
+}
+
+.hero__section-btn:hover{
+  background: var(--white-color);
+  border: 1px solid var(--green-color);
+  color: var(--green-color);
+  padding: 19px 39px;
+}
+
+.hero__section-btn:active{
+  color: var(--white-color);
+  background: var(--green-color);
+  padding: 20px 40px;
+  opacity: 70%;
+  border: none;
 }
 
 .hero__section-video{
