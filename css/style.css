@@ -527,7 +527,6 @@ a{
   display: flex;
   justify-content: space-between;
   padding: 100px 0;
-  border-bottom: 1px solid #3B4155;
 }
 
 .footer__top-start{
@@ -576,6 +575,10 @@ a{
   width: 280px;
 }
 
+.footer__icon-link{
+  color: var(--white-color);
+}
+
 .footer__top-icon{
   display: flex;
   justify-content: space-between;
@@ -592,6 +595,8 @@ a{
   justify-content: space-between;
   align-items: center;
   padding: 50px 0;
+  border-top: 1px solid #3B4155;
+  padding: 50px 152px;
 }
 
 .footer__down-text{

@@ -9,6 +9,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="/css/style.min.css">
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -47,7 +48,7 @@
               </ul>
             </nav>
           </div>
-          <a class="header__btn" href="#">(239) 555-0108</a>
+          <a class="header__btn" href="tel:(239) 555-0108">(239) 555-0108</a>
         </div>
       </div>
     </header>
@@ -257,7 +258,7 @@
     <section class="registration__section">
       <div class="container">
         <div class="registration__section-wrapper">
-          <form class="registration__section-form" action="">
+          <form class="registration__section-form" action="http://foo.com" method="post">
             <input
               class="form__input-name"
               type="text"
@@ -277,7 +278,7 @@
             <select class="registration__section-select" name="info" id="info">
               <option value="Description">Description</option>
             </select>
-            <a href="#" class="registration__section-btn">Send</a>
+            <button class="registration__section-btn" href="#" >Send</button>
             <p class="registration__section-text">
               We call back in 10-30 minutes, guaranteed!
             </p>
@@ -344,25 +345,24 @@
                 </p>
               </li>
               <li class="footer__top-icon">
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-linkedin"></i>
-                <i class="bx bxl-instagram"></i>
+                <a class="footer__icon-link" href="https://twitter.com/" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <a class="footer__icon-link" href="https://www.facebook.com/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                <a class="footer__icon-link" href="https://www.linkedin.com/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a class="footer__icon-link" href="https://www.instagram.com/" target="_blank"><i class="bx bxl-instagram"></i></a>
               </li>
             </ul>
           </div>
-
-          <div class="footer__down">
-            <img
-              src="/img/footer-logo.svg"
-              alt="footer section logo img"
-              class="footer__logo-img"
-              width="81"
-              height="28"
-            />
-            <p class="footer__down-text">Copyright © 2022 Pixer</p>
-          </div>
         </div>
+      </div>
+      <div class="footer__down">
+        <img
+          src="/img/footer-logo.svg"
+          alt="footer section logo img"
+          class="footer__logo-img"
+          width="81"
+          height="28"
+        />
+        <p class="footer__down-text">Copyright © 2022 Pixer</p>
       </div>
     </footer>
     <!-----FOOTER SECTION END----->
