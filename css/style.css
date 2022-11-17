@@ -257,9 +257,8 @@ a{
   cursor: pointer;
 }
 
-.service__box-card:nth-child(1){
+.web{
   margin-right: 32px;
-  margin-bottom: 32px;
 }
 
 .service__box-card:nth-child(2){
@@ -268,6 +267,19 @@ a{
 
 .service__box-card:nth-child(4){
   margin-right: 32px;
+  margin-top: 32px;
+}
+
+.branding .service__card-subtitle{
+  margin-bottom: 23px;
+}
+
+.developer .service__card-subtitle{
+  margin-bottom: 50px;
+}
+
+.design{
+  margin-top: 32px;
 }
 
 .service__box-card:hover{
@@ -287,6 +299,10 @@ a{
   color: var(--white-color);
 }
 
+.service__box-card:hover .service__card-icon{
+  background-color: var(--white-color);
+}
+
 .service__card-title{
   display: flex;
   font-size: 32px;
@@ -296,13 +312,15 @@ a{
   margin-bottom: 20px;
 }
 
-.service__card-title::after{
-  content: url(/img/card-web-img.svg);
-  width: 64px;
-  height: 64px;
+.service__card-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  margin-left: 60px;
+.service__card-icon{
   background-color: #E1E7ED;
+  border-radius: 50%;
 }
 
 .service__card-subtitle{
@@ -320,6 +338,10 @@ a{
 
 .web .service__card-subtitle{
   margin-bottom: 50px;
+}
+
+.smm .service__card-subtitle{
+  margin-bottom: 23px;
 }
 
 /*-----SERVICE SECTION END-----*/
