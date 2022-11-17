@@ -405,3 +405,87 @@ a{
 }
 
 /*-----PLAN SECTION END-----*/
+
+
+
+
+
+/*-----FORM SECTION SATART-----*/
+
+.registration__section-wrapper{
+  margin-top: 50px;
+}
+
+.registration__section-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--silver-bg);
+  padding: 64px 0;
+  border-radius: 6px;
+}
+
+.registration__section-form input{
+  width: 384px;
+  padding-bottom: 21px;
+  margin-bottom: 51px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--subtitle-color);
+  background: var(--silver-bg);
+}
+
+.registration__section-form input::placeholder{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--title-color);
+}
+
+.registration__section-select{
+  width: 384px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--subtitle-color);
+  background: var(--silver-bg);
+  padding-bottom: 21px;
+  outline: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.registration__section-btn{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: 6px;
+  padding: 20px 69.5px;
+  margin-bottom: 24px;
+}
+
+.registration__section-btn:hover{
+  color: var(--green-color);
+  border: 1px solid var(--green-color);
+  background-color: var(--white-color);
+  padding: 19px 68.5px;
+}
+
+.registration__section-btn:active{
+  background-color: var(--green-color);
+  color: var(--white-color);
+  border: none;
+  padding: 20px 69.5px;
+  opacity: 70%;
+}
+
+.registration__section-text{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858EA1;
+}
+
+/*-----FORM SECTION END-----*/
