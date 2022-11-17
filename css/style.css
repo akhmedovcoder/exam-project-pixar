@@ -588,7 +588,13 @@ a{
   color: var(--white-color);
 }
 
+.footer__logo-img:hover{
+  opacity: 80%;
+}
 
+.footer__logo-img:active{
+  opacity: 60%;
+}
 
 .footer__down{
   display: flex;
@@ -606,4 +612,4 @@ a{
   color: var(--white-color);
 }
 
-/*-----FOOTER SECTION END-----*/
+-----FOOTER SECTION END----- */
