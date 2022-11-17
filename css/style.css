@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @font-face {
@@ -85,16 +93,28 @@ a{
 }
 
 .header__wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
 }
 
 .header__start{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo{
@@ -112,8 +132,12 @@ a{
 }
 
 .header__nav-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 402px;
   list-style: none;
 }
@@ -167,8 +191,12 @@ a{
 
 
 .hero__section-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 156px;
 }
 
@@ -243,13 +271,21 @@ a{
 }
 
 .service__section-box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .service__box-card{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 384px;
   padding: 30px;
   border: 2px solid #E1E7ED;
@@ -304,6 +340,8 @@ a{
 }
 
 .service__card-title{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 32px;
   font-weight: 600;
@@ -313,9 +351,15 @@ a{
 }
 
 .service__card-top{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .service__card-icon{
@@ -357,14 +401,26 @@ a{
 }
 
 .plan__section-wrapper{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .plan__section-article{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .plan__section-title{
@@ -385,17 +441,25 @@ a{
 }
 
 .plan__section-content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .plan-start{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex ;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-bottom: 100px;
 }
 
 .plan-middle{
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   margin-bottom: 100px;
 }
 
@@ -440,9 +504,16 @@ a{
 }
 
 .registration__section-form{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--silver-bg);
   padding: 64px 0;
   border-radius: 6px;
@@ -456,6 +527,34 @@ a{
   border: none;
   border-bottom: 1px solid var(--subtitle-color);
   background: var(--silver-bg);
+}
+
+.registration__section-form input::-webkit-input-placeholder{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--title-color);
+}
+
+.registration__section-form input::-moz-placeholder{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--title-color);
+}
+
+.registration__section-form input:-ms-input-placeholder{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--title-color);
+}
+
+.registration__section-form input::-ms-input-placeholder{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25.2px;
+  color: var(--title-color);
 }
 
 .registration__section-form input::placeholder{
@@ -524,12 +623,18 @@ a{
 }
 
 .footer__top{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 100px 0;
 }
 
 .footer__top-start{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -580,8 +685,12 @@ a{
 }
 
 .footer__top-icon{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 230px;
   font-size: 28px;
   margin-top: 34px;
@@ -597,9 +706,15 @@ a{
 }
 
 .footer__down{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 50px 0;
   border-top: 1px solid #3B4155;
   padding: 50px 152px;
@@ -612,4 +727,4 @@ a{
   color: var(--white-color);
 }
 
------FOOTER SECTION END----- */
+/*-----FOOTER SECTION END----- */
